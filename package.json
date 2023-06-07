@@ -1,0 +1,19 @@
+{
+  "name": "encode_mev_bot",
+  "version": "1.0.0",
+  "description": "encode final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdroooooooo/encode_mev_bot.git"
+  },
+  "author": "team_15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pdroooooooo/encode_mev_bot/issues"
+  },
+  "homepage": "https://github.com/pdroooooooo/encode_mev_bot#readme"
+}
