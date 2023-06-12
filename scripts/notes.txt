@@ -1,3 +1,6 @@
+***** DEPLOY AND MINT *****
+
+
 [christopherdick:~/git/solidity_playground]$ npx ts-node --files ./scripts/DeployMatheusCoin.ts 
 Connecting to blockchain
 Using address 0x75dE164aa2f83625def6257cC99d40C8C4f659d9
@@ -7,3 +10,20 @@ Wallet balance is 208.9079856367288 ETH
 Token Contract deployed at the address 0xeD61FD27F19b55bf78701D6a9e8B4Eb7834B198B at block 9167806
 Mint tx completed with hash 0xc56d001d5c1ed21a4aa908d99dcd58653fe3991689bf98629430f80317d0622c
 Mint tx completed with hash 0xf9079c0fda55c6d8d13001bfd7707371a04d8af41e355f7467dd122702eb45b6
+
+***** MINT MORE AND PROVIDE LIQUIDITY TO UNISWAP *****
+
+
+[christopherdick:~/git/solidity_playground]$ npx ts-node --files ./scripts/mintAddLiquidity.ts
+Connecting and using signer with address 0x75dE164aa2f83625def6257cC99d40C8C4f659d9
+Alchemy key is of length 32
+The last block is 9167912
+Wallet balance is 208.90400863597876 ETH
+Attaching to Token contract
+Token name is MatheusCoin and token symbol is MATH
+Singer address is minter? true
+Mint tx completed with has 0xf60ccf3f1829cabae8d0f21c973741029cd6bf6413b6a9aedb320f85227d2c88
+Mint tx completed with hash 0xb4b0065405a0042ed08242c68e0f52e52739418fdca064a91cda4e72e50f757b
+Approval tx completed with hash 0x87e6567c8a30091f89d62682f90d21d7a36e255b2be90e35118ffd185af3765a
+Adding liquidity tx completed with hash 0xc17b7e4eac83c931b6f1a4d9f96832cfd9ed439470210a96e5ddd3de828a968c
+Wallet balance is 207.89954393117108 ETH and token balance is 910.00001 MATH
