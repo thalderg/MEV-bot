@@ -27,3 +27,22 @@ Mint tx completed with hash 0xb4b0065405a0042ed08242c68e0f52e52739418fdca064a91c
 Approval tx completed with hash 0x87e6567c8a30091f89d62682f90d21d7a36e255b2be90e35118ffd185af3765a
 Adding liquidity tx completed with hash 0xc17b7e4eac83c931b6f1a4d9f96832cfd9ed439470210a96e5ddd3de828a968c
 Wallet balance is 207.89954393117108 ETH and token balance is 910.00001 MATH
+
+***** AGAIN BUT ALSO PROVIDE LIQUIDITY TO SUSHI *****
+
+[christopherdick:~/git/solidity_playground]$ npx ts-node --files ./scripts/mintAddLiquidity.ts
+Connecting and using signer with address 0x75dE164aa2f83625def6257cC99d40C8C4f659d9
+Alchemy key is of length 32
+The last block is 9173139
+Wallet balance is 207.89954393117108 ETH
+Attaching to Token contract
+Token name is MatheusCoin and token symbol is MATH
+Singer address is minter? true
+Mint tx completed with hash 0x89b1916f521838fe81cb968a3e134a3b58dfa820ee07cdaa5f0b2749af0dd9b0
+Mint tx completed with hash 0xf2c5570bbffbed77fc3834bea3bb33f2b858adb6fef08ebcc595b9b215de20d7
+Approval tx completed with hash 0x54099d26c4c5542a68461ab98be1caf4ec7eb89231ca9da01951ea5975d86269
+Adding liquidity to Uniswap tx completed with hash 0xcc3cc81c9d2d251dfc90f9546d44e383e259879b1ff5abcb3e666dd78c6e43d8
+Wallet balance is 206.89917712898844 ETH and token balance is 1909.9999223893046 MATH
+Approval tx completed with hash 0x4eda5a2c21800189a6bc4490fc99679206375efae31d0a61b5e2168d31c69b94
+Adding liquidity to Sushi tx completed with hash 0xfd99cc3ea3818993a35ddd2acf64ef7851d4bc00aa67107494c30994f963ebbf
+Wallet balance is 205.89563358115154 ETH and token balance is 1809.9999223893046 MATH
