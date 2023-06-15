@@ -114,9 +114,9 @@ async function getPoolInfo() {
   console.log()
 }
 
-async function swapExactETHForTokens(exchange: string, amountETH: string, minMATH: string): Promise<void> {
+async function swapExactETHForTokens(dex: string, amountETH: string, minMATH: string): Promise<void> {
   let router: Contract;
-   if (exchange === '1') {
+   if (dex === '1') {
     router = uniswapV2Router;
    }
    else {
@@ -139,9 +139,9 @@ async function swapExactETHForTokens(exchange: string, amountETH: string, minMAT
 }
 
 
-async function swapTokensForExactETH(exchange: string, maxMath: string, amountETH: string): Promise<void> {
+async function swapTokensForExactETH(dex: string, maxMath: string, amountETH: string): Promise<void> {
   let router: Contract;
-   if (exchange === '1') {
+   if (dex === '1') {
     router = uniswapV2Router;
    }
    else {
@@ -191,11 +191,11 @@ function menuOptions(rl: readline.Interface) {
           mainMenu(rl);
           break;
         case 3:
-          rl.question("select 1 for uniswap 2 for sushiswap\n", async (exchange) => {
+          rl.question("select 1 for uniswap 2 for sushiswap\n", async (dexOption) => {
             rl.question("Input ETH to swap\n", async (amountETH) => {
               rl.question("Input minimum amount of MATH you want to receive?\n", async (minMATH) => {
             try {
-              await swapExactETHForTokens(exchange, amountETH, minMATH);
+              await swapExactETHForTokens(dexOption, amountETH, minMATH);
             } catch (error) {
               console.log("error\n");
               console.log({ error });
@@ -206,11 +206,11 @@ function menuOptions(rl: readline.Interface) {
       });
           break;
         case 4:
-          rl.question("1 uniswap 2 for sushiswap\n", async (exchange) => {
+          rl.question("1 uniswap 2 for sushiswap\n", async (dexOption) => {
             rl.question("Input the MAX amount of MATH to swap\n", async (maxMATH) => {
               rl.question("Amount of ETH you want to receive\n", async (amountETH) => {
               try {
-                await swapTokensForExactETH(exchange, maxMATH, amountETH);
+                await swapTokensForExactETH(dexOption, maxMATH, amountETH);
               } catch (error) {
                 console.log("error\n");
                 console.log({ error });
